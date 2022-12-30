@@ -13,6 +13,7 @@
 		403FD1F0295F1527008A24EF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 403FD1EF295F1527008A24EF /* FirebaseFirestore */; };
 		403FD1F2295F1527008A24EF /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 403FD1F1295F1527008A24EF /* FirebaseFirestoreSwift */; };
 		403FD1F4295F1527008A24EF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 403FD1F3295F1527008A24EF /* FirebaseStorage */; };
+		403FD1FD295F22D6008A24EF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403FD1FC295F22D6008A24EF /* User.swift */; };
 		408F83A1295B588300EFB7B1 /* PVRedactorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408F83A0295B588300EFB7B1 /* PVRedactorApp.swift */; };
 		408F83A3295B588300EFB7B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408F83A2295B588300EFB7B1 /* ContentView.swift */; };
 		408F83A5295B588600EFB7B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408F83A4295B588600EFB7B1 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		403FD1FC295F22D6008A24EF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		408F839D295B588300EFB7B1 /* PVRedactor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PVRedactor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		408F83A0295B588300EFB7B1 /* PVRedactorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVRedactorApp.swift; sourceTree = "<group>"; };
 		408F83A2295B588300EFB7B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +48,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		403FD1F5295F2268008A24EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		403FD1F6295F226B008A24EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				403FD1FC295F22D6008A24EF /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		403FD1F8295F2276008A24EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		408F8394295B588300EFB7B1 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +89,9 @@
 		408F839F295B588300EFB7B1 /* PVRedactor */ = {
 			isa = PBXGroup;
 			children = (
+				403FD1F8295F2276008A24EF /* ViewModel */,
+				403FD1F6295F226B008A24EF /* Model */,
+				403FD1F5295F2268008A24EF /* View */,
 				408F83A0295B588300EFB7B1 /* PVRedactorApp.swift */,
 				408F83A2295B588300EFB7B1 /* ContentView.swift */,
 				408F83A4295B588600EFB7B1 /* Assets.xcassets */,
@@ -164,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				403FD1FD295F22D6008A24EF /* User.swift in Sources */,
 				408F83A3295B588300EFB7B1 /* ContentView.swift in Sources */,
 				408F83A1295B588300EFB7B1 /* PVRedactorApp.swift in Sources */,
 			);
