@@ -15,6 +15,7 @@
 		403FD1F4295F1527008A24EF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 403FD1F3295F1527008A24EF /* FirebaseStorage */; };
 		403FD1FD295F22D6008A24EF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403FD1FC295F22D6008A24EF /* User.swift */; };
 		403FD202295F2663008A24EF /* FirestorePathManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403FD201295F2663008A24EF /* FirestorePathManager.swift */; };
+		403FD206295F274C008A24EF /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403FD205295F274C008A24EF /* AuthViewModel.swift */; };
 		408F83A1295B588300EFB7B1 /* PVRedactorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408F83A0295B588300EFB7B1 /* PVRedactorApp.swift */; };
 		408F83A3295B588300EFB7B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408F83A2295B588300EFB7B1 /* ContentView.swift */; };
 		408F83A5295B588600EFB7B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408F83A4295B588600EFB7B1 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		403FD1FC295F22D6008A24EF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		403FD201295F2663008A24EF /* FirestorePathManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestorePathManager.swift; sourceTree = "<group>"; };
+		403FD205295F274C008A24EF /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		408F839D295B588300EFB7B1 /* PVRedactor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PVRedactor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		408F83A0295B588300EFB7B1 /* PVRedactorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVRedactorApp.swift; sourceTree = "<group>"; };
 		408F83A2295B588300EFB7B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				403FD200295F2619008A24EF /* Manager */,
+				403FD205295F274C008A24EF /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				403FD206295F274C008A24EF /* AuthViewModel.swift in Sources */,
 				403FD202295F2663008A24EF /* FirestorePathManager.swift in Sources */,
 				403FD1FD295F22D6008A24EF /* User.swift in Sources */,
 				408F83A3295B588300EFB7B1 /* ContentView.swift in Sources */,
