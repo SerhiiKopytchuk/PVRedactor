@@ -28,6 +28,10 @@ class AuthViewModel: ObservableObject {
         self.auth.currentUser?.uid ?? "no UID"
     }
 
+    init() {
+        isSignedIn = Auth.auth().currentUser != nil
+    }
+
     // MARK: - functions
 
     func getCurrentUser() {
