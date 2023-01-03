@@ -28,6 +28,10 @@ class AuthViewModel: ObservableObject {
         self.auth.currentUser?.uid ?? "no UID"
     }
 
+    init() {
+        isSignedIn = Auth.auth().currentUser != nil
+    }
+
     // MARK: - functions
 
     func getCurrentUser() {
@@ -67,19 +71,19 @@ class AuthViewModel: ObservableObject {
 
     // MARK: - authorization
 
-    fileprivate func doesUserHaveFirebaseAccount(competition: @escaping (Bool) -> Void ) {
+    fileprivate func doesUserHaveFirebaseAccount(completion: @escaping (Bool) -> Void ) {
         firebaseManager.getUserDocumentReference(for: userUID)
             .getDocument(as: User.self) { result in
                 switch result {
                 case .success:
-                    competition(true)
+                    completion(true)
                 case .failure:
-                    competition(false)
+                    completion(false)
                 }
             }
     }
 
-    func signUp(username: String, email: String, password: String, competition: @escaping (User) -> Void) {
+    func signUp(username: String, email: String, password: String) {
         showLoader()
         DispatchQueue.global(qos: .userInteractive).async { [weak self] in
             self?.auth.createUser(withEmail: email, password: password) { result, error in
