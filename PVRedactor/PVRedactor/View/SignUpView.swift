@@ -121,6 +121,7 @@ struct SignUpView: View {
                 }
 
             }
+            .foregroundColor(Color("gray"))
             .padding(.horizontal)
             .background(content: {
                 Color("white")
