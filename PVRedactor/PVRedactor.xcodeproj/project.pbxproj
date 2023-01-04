@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		400AB9502965B1DB0005CA31 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400AB94F2965B1DB0005CA31 /* SignUpView.swift */; };
 		403FD1EA295F1527008A24EF /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 403FD1E9295F1527008A24EF /* FirebaseAnalytics */; };
 		403FD1EC295F1527008A24EF /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 403FD1EB295F1527008A24EF /* FirebaseAnalyticsSwift */; };
 		403FD1EE295F1527008A24EF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 403FD1ED295F1527008A24EF /* FirebaseAuth */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		400AB94F2965B1DB0005CA31 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		403FD1FC295F22D6008A24EF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		403FD201295F2663008A24EF /* FirestorePathManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestorePathManager.swift; sourceTree = "<group>"; };
 		403FD205295F274C008A24EF /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 		403FD1F5295F2268008A24EF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				400AB94F2965B1DB0005CA31 /* SignUpView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				403FD202295F2663008A24EF /* FirestorePathManager.swift in Sources */,
 				403FD1FD295F22D6008A24EF /* User.swift in Sources */,
 				408F83A3295B588300EFB7B1 /* ContentView.swift in Sources */,
+				400AB9502965B1DB0005CA31 /* SignUpView.swift in Sources */,
 				408F83A1295B588300EFB7B1 /* PVRedactorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
